@@ -1,68 +1,73 @@
+/* Importação de Estilos */
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
 /* Reset CSS */
-* {
+*{
   margin: 0;
   padding: 0;
 }
 
 /* Partes Principais */
-/*html {
-  font-size: 16px; POR PADRÃO
-}*/
-
 body{
-  background-color: #1B2430;
-  color: #f6f6f6;
-  font-family: Times;
+  background-color: #070F2B;
   height: 100vh;  /* View Height (View Port) - 100% da tela do nosso navegador*/
   box-sizing: border-box;
+  overflow: hidden;
 }
-
-/*footer {
-  background-color: #51557E;
-  color: whitesmoke;
-  font-weight: bold;
-}*/
 
 /* Tags */
-h1 {
-  color: whitesmoke;
-}
-
-p {
-  font-size: large;
-}
-
-button {
-  background-color: purple;
-  color: white;
-  border: none;
-  font-weight: bolder;
-  border-radius: 50px;
-  height: 25px;
-}
-
-a {
-  color: DodgerBlue;
-}
-
-img {
-  width: 225px;
-  height: 220px;
+img{
+  width: 350px;
+  height: 450px;
   border-radius: 3px;
 }
 
-/* IDs e Tags (respectivamente)*/
-#titulo {
+/* IDs e Classes (respectivamente)*/
+#titulo-destaque{
   color: #22D4FD;
-  border: 1px solid #22D4FD;
-  padding: 7px;
 }
 
-#introducao {
-  color: darkgray;
-}
-
-.apresentacao {
+.apresentacao{
+  margin: 13% 20%;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+}
+
+.apresentacao__conteudo{
+  width: 615px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.apresentacao__conteudo__titulo{
+  font-size: 36px;
+  font-family: Roboto Mono;
+  color: #f9f9f9;
+}
+
+.apresentacao__conteudo__texto{
+  color: #9290C3;
+  font-size: 24px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: justify;
+}
+
+.apresentacao__links{
+  display: flex;
+  justify-content: space-between;
+}
+
+.apresentacao__links__link{
+  color: #ead9d9;
+  background-color: #1B1A55;
+  width: 280px;
+  text-align: center;
+  border-radius: 16px;
+  font-size: 24px;
+  font-weight: 600;
+  padding: 21.5px 0;
+  text-decoration: none;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
